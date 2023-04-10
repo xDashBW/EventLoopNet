@@ -1,1 +1,0 @@
-This is a cross platfporm c++ tcp multi-threaded network library. Compared with libevent 4096kb throughput, 25-30% faster, event processing performance slightly better than libevent. Specific benchmark Please refer to the libev manual bench.c

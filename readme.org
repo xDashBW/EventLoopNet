@@ -1,0 +1,9 @@
+
+非常经典的 c++ Tcp 服务器实现.
+
+底层是像 libevent 一样对 epoll 等 io 复用接口的封装, 实现 reactor 模型的 event wait.
+
+中层提供网络库提供 buffer 来进行 read 系统调用, 再通知用户, 防止 tcp 粘包
+
+上层使用 one loop per thread 可能利用多核提高吞吐量, 同时配合使用线程池实现每个核的负载均衡 
+
